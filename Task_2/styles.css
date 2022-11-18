@@ -30,6 +30,7 @@ footer {
 	width: 163px;
 	height: 35px;
 	color: #ffc600;
+	cursor: pointer;
 }
 
 .logo:hover {
