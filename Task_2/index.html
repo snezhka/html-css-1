@@ -20,7 +20,80 @@
 		</style>
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<a href="#"
+				><img src="images/logo-header.svg" alt="" class="logo-header"
+			/></a>
+			<div class="header-container">
+				<div class="search">
+					<img src="images/search.svg" alt="" />
+					<input type="text" placeholder="Поиск по сайту" class="search_text" />
+					<section class="search_onfocus">
+						<hr class="search_line" />
+						<div class="search_button"><a href="#">Найти</a></div>
+					</section>
+				</div>
+				<ul class="header-container_upper-menu">
+					<li>
+						<a href="#">
+							<img src="images/user.svg" alt="" />
+							Войти</a
+						>
+					</li>
+					<ul class="header-container_upper-menu_right">
+						<li>
+							<a href="#">
+								<img src="images/compare.svg" alt="" />
+								Сравнить</a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/cart.svg" alt="" />
+								Корзина</a
+							>
+						</li>
+					</ul>
+				</ul>
+				<ul class="header-container_center-menu">
+					<div class="header-container_center-menu-left">
+						<li class="open_menu">
+							<a href="#" class="large-menu_text"
+								>Каталог товаров <img src="images/plus.svg" alt="" id="plus"
+							/></a>
+						</li>
+						<div class="catalog-options">
+							<ul>
+								<li><a href="#">Виртуальная реальность</a></li>
+								<li><a href="#">Моноподы</a></li>
+								<li><a href="#">Экшн-камеры</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Фитнес-браслеты</a></li>
+								<li><a href="#">Умные часы</a></li>
+							</ul>
+
+							<li><a href="#">Квадрокоптеры</a></li>
+						</div>
+					</div>
+					<ul class="header-container_center-menu-right">
+						<li>
+							<a href="#" class="large-menu_text">Доставка</a>
+						</li>
+						<li>
+							<a href="#" class="large-menu_text">Гарантия</a>
+						</li>
+						<li>
+							<a href="#" class="large-menu_text">Контакты</a>
+						</li>
+					</ul>
+				</ul>
+				<div class="decoration">
+					<div class="header-line"></div>
+					<div class="header-number"></div>
+				</div>
+			</div>
+		</header>
 		<section></section>
 		<footer>
 			<div class="footer-container">
@@ -28,17 +101,21 @@
 					<img src="images/logo.png" alt="" class="logo" />
 					<ul class="small-menu">
 						<li class="small-menu_item">
-							<img src="images/user.png" alt="" class="small-menu_logo" />
-							<a class="small-menu_text" href="#">Войти</a>
+							<a class="small-menu_text" href="#">
+								<img src="images/user.png" alt="" class="small-menu_logo" />
+								Войти</a
+							>
 						</li>
 						<li class="small-menu_item">
-							<img src="images/compare.png" alt="" class="small-menu_logo" />
-							<a class="small-menu_text" href="#">Сравнить</a>
+							<a class="small-menu_text" href="#">
+								<img src="images/compare.png" alt="" class="small-menu_logo" />
+								Сравнить</a
+							>
 						</li>
 						<li class="small-menu_item">
-							<img src="images/cart.png" alt="" class="small-menu_logo" />
-							<a class="small-menu_text" href="#" class="small-menu_text"
-								>Корзина</a
+							<a class="small-menu_text" href="#" class="small-menu_text">
+								<img src="images/cart.png" alt="" class="small-menu_logo" />
+								Корзина</a
 							>
 						</li>
 					</ul>
@@ -62,14 +139,59 @@
 					<img src="images/bottom-line.png" alt="" class="bottom-line" />
 					<div class="social-links">
 						<a href="#"
-							><img src="images/fb.svg" alt="" class="social-links_img"
-						/></a>
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+							>
+								<g>
+									<g opacity=".3">
+										<image
+											width="32"
+											height="32"
+											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACFklEQVRYR8WXO2uVQRCGn7fQygvBysoE7IISBEHsUlkasImksIiQ+AcC+QWCNnZGsBKDNkKqgJWdWIiIwS4QrKzMRWNlMTKfu2HP8Rz2m5wTvm13duaZ2+6saLnM7AIwB8wCV4Ep4Ew6fgjsAF+Ad8CGpB9tVKsmZGZubBW4A5yqyaf9P8Ab4KEkhxq6hgKY2VngEbAEVEGHWDDgGbAi6dcgmYGKzWzawwhcbulxTWzb0yfpa7/gfwBmdgN4C5yraQ3u/wRuSfpQnusBSJ6/PwHj2aZD3CwjcQSQcv4pGPY14DGwW3j1reKAp+NarokS4CmwHAjrC0n3+uXNbB84X9GzJumByzQAqdU+B6v9uqSPxwTw7pjxFs0Ar4D5gPcuOiHJvXUHnhRn3bPTLXS9lnRX6Yb7Hrhksu4SwD2KLr+sLjrAIvA8erovAscBcJP3HeAlsNASwNsoG7sk6SCloElFWrUCLE2tO4Df1VdaAhyFfZi8mUWiseUAfkfnV63GMW6AQweIEI8bgCjAJuDV62tB0u9UA/5w5XW7FsZyP5qC8uyobei6mhREinDcAE0RRtpw3ABNG3Z+Efmw2d1VnKp41Mco0so5jf8eowTgk2/0OR6lC3qf4wQRHUgmgeYtAPYivQ/0DiQJwMfw6EgWtNuIDx7JEoSP490MpdmVTsfyAqK7j0kB0d3XrKyszj6n/eV9Ut/zv7VFE8hfmH3+AAAAAElFTkSuQmCC"
+										/>
+									</g>
+								</g></svg
+						></a>
 						<a href="#"
-							><img src="images/instagram.svg" alt="" class="social-links_img"
-						/></a>
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+							>
+								<g>
+									<g opacity=".3">
+										<image
+											width="32"
+											height="32"
+											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACfElEQVRYR82XTYhOYRTHf39lI0SysKOsiCaroZGUYqOmbHyUJqaG7CxEWVkQC1kNI2VjIqVYSg0LCSGZrHyMlGyImLIQf53b8+rO673vvRfjerb3POf87vl+RMVjewHQD6wHVgJLgNnp+iQwATwBbgJXJb2volplQrbD2CFgCzCzTD59/wpcAY5JCqjCUwhgew5wHNgDlIIWWDAwAhyQ9LmTTEfFtpeHG4GlFf+4TOx5hE/S03bBXwBs9wLXgbllWmt+/wRslHQ3f28KQPrzO9NgvGUzINbkPfETIMX80V90e5GDIhyrWjmRBxgG9tZ06++Kn5GU2coAUqk9Lsj2Z8BuYLymtR7gPLC4w72ojp4o0RbARWBrgYFeSfdqGs/EbW8AbhTcvSRpm1KHe9ulycyX9LEMwPYm4GCSuy3pcNL9ruBuNKtFARDuPdfFQFWAgeTyUHVNUr/tecCHLroHA+ACsKMhgNEAiF69oi6A7bXAIPA9tdtwdV/S81rSWAUPjAdA9OjWVOvEkYXAdrTlN5K+2F4HjAEz0oWIZ5+k+7ZD10JJExUAJgMgSqLbaQHcAnZJeml7FNjedumspKFU0kcq5gB1AQYkvSoBWAYcrQNQNQThgWFJl0tCEFW1uSJAFoJKSWg7AGYBqyV9a0/CmHK2Y2GJefKiIkCWhJXKMAFE8sWCsS8g8jmQjEc/2VmjD2RlWKkR5QDC7kPgJPAgzY/YIfanXbF2I4pls7QV2z4VA6SsJdduxWloNDeM/otxnCBOpw24opf/SGzqQpIAYg1vbiVLELGON7OUthza6Fqeg2juYZKDiJw4AQz986dZW4tt5nHaXmTT9Tz/AQMWesiTHkNbAAAAAElFTkSuQmCC"
+										/>
+									</g>
+								</g></svg
+						></a>
 						<a href="#"
-							><img src="images/twitter.svg" alt="" class="social-links_img"
-						/></a>
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+							>
+								<g>
+									<g opacity=".3">
+										<image
+											width="32"
+											height="32"
+											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1klEQVRYR8WXS4hOYRjHfw+5lHsWGrGgyZBcmpVLFhMlK8qGLE2YIgul2IkarITcsiTTREk2smAlC8nMuNSkUCTKArMg8ej/zXum85353nPO943xvdvzPO/zO8/9NUoed58LbAM6gJXAImB6UB8C3gD9wAPgtpl9KXO1FQm5u4wdAbYDk4rkw/dfwC2g28wEFT1RAHefAZwC9gGFoBELDlwGDpvZ91oyNS929+VyI9Ba8o+LxF4rfGb2Iis4CsDd1wD3gJlFt9b5/Ruw2cwep/WqAMKfPxoH44lNQaxLe2IEIMT86T90e8xBCkd7khNpgAtAV51ubVT8kplVbFUAQqk9G0O21wui6litEk0AbgA7ckqpqAwV2+Oh9n8ozsAJYCnwFpgPTM7c32NmOy10uI+RJjMIHAB6gVkRQHVBJdZA+ru7zwEWAj+Bl8CEjL6aVYsAdgNXI5ffMbOt7r4EkJfaa8gdNbPuWAzcfQNwMnglK9YpgGvArsgFg2bWFvJkItAJHASWpeTbzEyeGnXcfQpwFtgTuf+6ANSrV+Rk0dps83B3xVYNq0V/Z2ZKqloAApX7Y2dAAOrRyVTLCj4B5KHzZva77lR33wTcz9EbEkBN+qCkEdtqZn/qNR7Cth84l6dbBCDdM8ChRiDc/WYY41GGohAkilfCSP1a1hPuPhVQec8uCkFREkq/w8weljUe3K894mKBTiUJ88ow0X8ObDGz92UgQnPT7J9XIF8pw7xGlNZX51JH7IptN+HP5fq7wMYSsJVGpGUz1opfAZ+Ad4BKstfMPscudvcFQA+wvoTx4VYcqGPD6ANwLBiOJqC7a3WTJzU3ppUwLpHhYRQAtPnmjWM1IeVBHyAoDRY1L025VcDikkYTsepxHCCUscrc/3GqF5IAoDW8eStZgNA63pyldCQ4zVzLUxDNe5ikIJQTp4G9Y1hWG3uapcugaY/TbC2O1/P8LxH3IcgoLavXAAAAAElFTkSuQmCC"
+										/>
+									</g>
+								</g></svg
+						></a>
 					</div>
 					<a href="#"
 						><img src="images/logo-html.png" alt="" class="logo-html"
