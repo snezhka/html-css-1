@@ -139,7 +139,6 @@ header {
 	letter-spacing: normal;
 	line-height: 30px;
 	text-align: left;
-	/* Text style for "В, веденны" */
 	font-style: normal;
 	letter-spacing: 0.15px;
 	line-height: normal;
@@ -254,8 +253,7 @@ header {
 #plus {
 	margin-left: 16px;
 }
-
-.open_menu:hover + .catalog-options {
+.header-container_center-menu-left:hover .catalog-options {
 	display: flex;
 }
 
