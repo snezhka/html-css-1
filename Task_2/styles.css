@@ -49,11 +49,12 @@ ul {
 }
 
 header {
-	height: 299px;
-	background: rgba(240, 197, 46, 0.5);
+	height: auto;
+	background: rgb(247, 226, 159);
 	margin: 40px 140px 0;
-	position: relative;
-	z-index: 0;
+	position: absolute;
+	width: 80vw;
+	z-index: 2;
 }
 
 .search {
@@ -66,12 +67,12 @@ header {
 
 .search_button {
 	position: absolute;
-	top: 42px;
+	top: 22px;
 	left: 420px;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	float: right;
+
 	width: 85px;
 	height: 49px;
 	border: 2px solid #000000;
@@ -186,7 +187,6 @@ header {
 }
 
 .header-container_upper-menu {
-	float: right;
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
@@ -223,6 +223,7 @@ header {
 
 .decoration_header-line {
 	margin-top: 28px;
+	margin-left: 10px;
 }
 .decoration_header-line:before {
 	content: url("images/header-line.png");
@@ -241,7 +242,6 @@ header {
 }
 
 .header-container_center-menu-left {
-	float: left;
 }
 
 #plus {
@@ -252,11 +252,10 @@ header {
 }
 
 .catalog-options {
-	position: absolute;
 	margin-top: 30px;
-	float: left;
+	margin-bottom: -10px;
 	display: none;
-	gap: 50px;
+	gap: 47px;
 	font-family: "Open Sans";
 	font-size: 15px;
 	font-weight: 300;
@@ -275,7 +274,6 @@ header {
 .header-container_center-menu-right {
 	width: 100%;
 	position: relative;
-	float: right;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -459,10 +457,23 @@ a.small-menu_text:active {
 	width: 80px;
 }
 
+.body {
+	min-height: 600px;
+}
+
 .slider {
-	margin: -130px 140px 0;
 	padding-left: 90px;
 	padding-right: 70px;
+	position: relative;
+	width: 69.42vw;
+	top: 225px;
+	left: 140px;
+	background: linear-gradient(
+		180deg,
+		rgb(247, 226, 159) 0% 25%,
+		transparent 25% 100%
+	);
+	z-index: 1;
 }
 
 .slide {
@@ -539,7 +550,7 @@ a.small-menu_text:active {
 
 .slide_image {
 	position: relative;
-	z-index: 1;
+	left: 10px;
 }
 
 .slider_buttons {
@@ -592,4 +603,9 @@ a.small-menu_text:active {
 	width: 526px;
 	height: 334px;
 	margin: 55px 30px 0 -60px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
 }
