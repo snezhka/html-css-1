@@ -104,6 +104,7 @@ header {
 }
 
 .search_line {
+	position: absolute;
 	background: #000000;
 	width: 441px;
 	height: 2px;
@@ -252,8 +253,8 @@ header {
 }
 
 .catalog-options {
-	margin-top: 30px;
-	margin-bottom: -10px;
+	margin-top: 20px;
+	margin-bottom: -30px;
 	display: none;
 	gap: 47px;
 	font-family: "Open Sans";
@@ -470,18 +471,12 @@ a.small-menu_text:active {
 	left: 140px;
 	background: linear-gradient(
 		180deg,
-		rgb(247, 226, 159) 0% 25%,
-		transparent 25% 100%
+		rgb(247, 226, 159) 0% 20%,
+		transparent 20% 100%
 	);
 	z-index: 1;
 }
 
-.slide {
-	display: flex;
-	justify-content: space-between;
-	/* gap: 105px; */
-	width: 100%;
-}
 .slide_description {
 	width: 55%;
 	position: relative;
@@ -553,14 +548,8 @@ a.small-menu_text:active {
 	left: 10px;
 }
 
-.slider_buttons {
-	position: relative;
-	top: 347px;
-	left: 906px;
-}
-
 .slide-text {
-	margin-top: -102px;
+	margin-top: -115px;
 }
 
 .slide-text_stats {
@@ -608,4 +597,73 @@ a.small-menu_text:active {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+}
+
+.slide {
+	display: none;
+}
+
+.nav-dot:checked + label + .slide {
+	display: flex;
+	justify-content: space-between;
+	/* gap: 105px; */
+	width: 100%;
+}
+
+.nav-dot + #card-label-1 {
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 1025px;
+	top: 335px;
+	z-index: 2;
+}
+
+.nav-dot + #card-label-2 {
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 1050px;
+	top: 335px;
+	z-index: 2;
+}
+
+.nav-dot + #card-label-3 {
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 1075px;
+	top: 335px;
+	z-index: 2;
+}
+
+.nav-dot {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.nav-dot + label:before {
+	position: absolute;
+	cursor: pointer;
+	background: #ffffff;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid #464646;
+	content: " ";
+	box-sizing: border-box;
+}
+
+.nav-dot:checked + label:after {
+	cursor: pointer;
+	position: absolute;
+	left: 3.5px;
+	top: 3.5px;
+	content: " ";
+	width: 5px;
+	height: 5px;
+	border: 1px solid #464646;
+	border-radius: 50%;
+	box-sizing: border-box;
 }
