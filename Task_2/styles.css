@@ -667,3 +667,11 @@ a.small-menu_text:active {
 	border-radius: 50%;
 	box-sizing: border-box;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+	@media {
+		.slider--safari {
+			top: 229px;
+		}
+	}
+}
