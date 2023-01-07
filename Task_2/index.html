@@ -71,7 +71,7 @@
 						<div class="catalog-options">
 							<ul>
 								<li><a href="#">Виртуальная реальность</a></li>
-								<li><a href="#">Моноподы</a></li>
+								<li><a href="catalog.html">Моноподы</a></li>
 								<li><a href="#">Экшн-камеры</a></li>
 							</ul>
 							<ul>
@@ -216,12 +216,12 @@
 				</div>
 		</section>
 		<section class="blocks">
-			<a href="" class = "block"><div class="block_image"><img src="images/popular-1.png" alt=""></div><p class="bold-text">Виртуальная реальность</p></a>
-			<a href="" class = "block"><div class="block_image"><img src="images/popular-2.png" alt=""></div><p class="bold-text">Моноподы для селфи</p></a>
-			<a href="" class = "block"><div class="block_image"><img src="images/popular-3.png" alt=""></div><p class="bold-text">Экшн-камеры</p></a>
-			<a href="" class = "block"><div class="block_image"><img src="images/popular-4.png" alt=""></div><p class="bold-text">Фитнес-браслеты</p></a>
-			<a href="" class = "block"><div class="block_image"><img src="images/popular-5.png" alt=""></div><p class="bold-text">Умные часы</p></a>
-			<a href=""class = "block"><div class="block_image"><img src="images/popular-6.png" alt=""></div><p class="bold-text">Квадрокоптеры</p></a>
+			<a href="#" class = "block"><div class="block_image"><img src="images/popular-1.png" alt=""></div><p class="bold-text">Виртуальная реальность</p></a>
+			<a href="#" class = "block"><div class="block_image"><img src="images/popular-2.png" alt=""></div><p class="bold-text">Моноподы для селфи</p></a>
+			<a href="#" class = "block"><div class="block_image"><img src="images/popular-3.png" alt=""></div><p class="bold-text">Экшн-камеры</p></a>
+			<a href="#" class = "block"><div class="block_image"><img src="images/popular-4.png" alt=""></div><p class="bold-text">Фитнес-браслеты</p></a>
+			<a href="#" class = "block"><div class="block_image"><img src="images/popular-5.png" alt=""></div><p class="bold-text">Умные часы</p></a>
+			<a href="#"class = "block"><div class="block_image"><img src="images/popular-6.png" alt=""></div><p class="bold-text">Квадрокоптеры</p></a>
 	</section>
 	<section class="middle-slider">
 		<div class="middle-slider_buttons">
@@ -318,14 +318,19 @@
 						</p>
 						<p class="slide-text_main">
 Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-						<a href="" class="company_contacts_map"><img src="images/map.png" alt="" ></a>
-		<img src="images/map-big.png" alt="" class="map-popup">
+						<a href="#map-popup" class="company_contacts_map">
+							<img src="images/map.png" alt="" >
+						</a>
+						<div id="map-popup">
+							<!-- <img src="images/map-big.png" alt="" > -->
+							 <a href="" id="close"><img src="images/modal-close.png" alt=""></a>
+						</div>
 						<div class="slide-text_more">
-							<a href="#">
+							<a href="#writeUsPopup"" >
 							НАПИШИТЕ НАМ
 						</a>
-						</div>
-						<form class="write-us-popup">
+						<form class="write-us-popup" id="writeUsPopup">
+							   <a href="" id="close"><img src="images/modal-close.png" alt=""></a>
 							<div class="write-us-popup_text">
 								<div>
 <label for="username" class="bold-text">Ваше имя:</label>
@@ -343,7 +348,10 @@
   <div class="slide-text_more">
   <a href=""><input type="submit"  value="ОТПРАВИТЬ"></a>
   </div>
+
+
 						</form>
+						</div>
 		</div>
 	</section>
 		<footer>
