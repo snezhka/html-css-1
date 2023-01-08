@@ -546,6 +546,19 @@ a.small-menu_text:active {
 }
 
 .slide-text_more--card {
+	cursor: pointer;
+	text-align: center;
+	color: #000000;
+	font-family: "Gilroy - Extra Bold";
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-style: normal;
+	letter-spacing: 2.15px;
+	line-height: normal;
 	background: linear-gradient(
 		180deg,
 		rgba(238, 238, 238, 0) 35%,
@@ -576,14 +589,14 @@ a.small-menu_text:active {
 }
 
 .slider > .slide .slide-text_more,
-.card_name > .slide-text_more {
+.card_name > .slide-text_more--card {
 	margin-bottom: 70px;
 	width: 220px;
 	height: 40px;
 	line-height: 40px;
 }
 
-.card_name > .slide-text_more {
+.card_name > .slide-text_more--card {
 	margin: 0;
 }
 
@@ -616,7 +629,8 @@ a.small-menu_text:active {
 	line-height: 40px;
 }
 
-.slide-text_more:hover {
+.slide-text_more:hover,
+.slide-text_more--card:hover {
 	background: rgba(240, 197, 46, 1);
 }
 
@@ -624,7 +638,8 @@ a.small-menu_text:active {
 	background: rgba(240, 197, 46, 1);
 }
 
-.slide-text_more:active > a {
+.slide-text_more:active > a,
+.slide-text_more--card:active {
 	opacity: 0.3;
 }
 
@@ -1160,25 +1175,25 @@ button[type="submit"]:hover {
 	display: inline-block;
 }
 
-.card_display:hover {
-	z-index: -1;
+.card_image:hover {
+	z-index: 0;
 	position: relative;
 	opacity: 0.5;
 	/* box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25); */
 	/* box-shadow: 0px 6px 15px rgb(219 219 219 / 25%); */
 }
 .card_name {
-	border-radius: 0 0 5px 5px;
+	/* border-radius: 0 0 5px 5px; */
 	width: 360px;
 	z-index: 10;
 	display: none;
 	box-sizing: border-box;
 	position: relative;
-	top: -45%;
+	top: -220px;
 	left: 0;
 }
 
-.card_display:hover + .card_name {
+.card_image:hover + .card_name {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
